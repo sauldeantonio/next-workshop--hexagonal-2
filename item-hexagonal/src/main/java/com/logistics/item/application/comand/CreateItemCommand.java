@@ -1,8 +1,8 @@
 package com.logistics.item.application.comand;
 
 import com.logistics.item.application.port.ItemRepositoryPort;
-import com.logistics.item.domain.DuplicatedItemException;
-import com.logistics.item.domain.InvalidItemException;
+import com.logistics.item.application.exceptions.DuplicatedItemException;
+import com.logistics.item.application.exceptions.InvalidItemException;
 import com.logistics.item.domain.Item;
 import lombok.Builder;
 import lombok.NonNull;

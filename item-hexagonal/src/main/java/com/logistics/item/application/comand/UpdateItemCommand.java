@@ -1,9 +1,9 @@
 package com.logistics.item.application.comand;
 
 import com.logistics.item.application.port.ItemRepositoryPort;
-import com.logistics.item.domain.InvalidItemException;
+import com.logistics.item.application.exceptions.InvalidItemException;
 import com.logistics.item.domain.Item;
-import com.logistics.item.domain.ItemNotFoundException;
+import com.logistics.item.application.exceptions.ItemNotFoundException;
 import lombok.NonNull;
 import lombok.experimental.SuperBuilder;
 import org.springframework.util.StringUtils;
