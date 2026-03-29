@@ -1,21 +1,20 @@
 package com.logistics.item.infrastructure.repository.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
+@Document(collection="items")
 @Getter
 @Setter
 @SuperBuilder
 @NoArgsConstructor
-public class ItemEntity {
+public class ItemDocument {
     @Id
     private String id;
-    @Column(nullable = false, unique = true)
     private String name;
 }
